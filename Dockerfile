@@ -14,5 +14,5 @@ COPY ./package.json /app/package.json
 
 RUN npm install --production
 
-EXPOSE 3000
+EXPOSE 3333
 CMD ["npm", "run", "start"]
