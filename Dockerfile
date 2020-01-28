@@ -1,4 +1,4 @@
-FROM node:lts-alpine
+FROM node:latest
 MAINTAINER flowerlang "m15779063830_1@163.com"
 
 RUN rm -f package-lock.json \
