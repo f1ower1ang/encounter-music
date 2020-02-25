@@ -32,7 +32,7 @@ export default class Song {
 }
 
 export function createSong(song) {
-  const url = song.type === 'nt' ? `http://encounter-music.cn:81/api/ntUrl?id=${song.songId}` : `http://encounter-music.cn:81/api/qqRedirect?id=${song.songId}`
+  const url = song.type === 'nt' ? `http://encounter-music.cn:81/api/ntUrl?id=${song.songId}` : `https://v1.itooi.cn/tencent/url?id=${song.songId}`
   return new Song({
     songId: song.songId,
     album: song.album,
